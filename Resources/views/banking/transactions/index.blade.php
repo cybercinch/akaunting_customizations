@@ -119,7 +119,7 @@
                                                 <x-sortablelink column="contact.name" title="{{ trans_choice('general.contacts', 1) }}" />
                                             </x-slot>
                                             <x-slot name="second">
-                                                <x-sortablelink column="decription" title="{{ trans('general.description') }}" />
+                                                <x-sortablelink column="description" title="{{ trans('general.description') }}" />
                                             </x-slot>
                                         </x-table.th>
 
