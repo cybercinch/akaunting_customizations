@@ -3,6 +3,7 @@
 namespace Modules\MyCustomizations\Providers;
 
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider as Provider;
 use App\Models\Banking\Transaction;
 
@@ -33,6 +34,12 @@ class Main extends Provider
 
         # Model hooks for Transaction
         Transaction::observe('Modules\MyCustomizations\Observers\Transaction');
+
+        # View Composer for Transaction listing
+        View::composer(
+            ['banking.transactions.index'],
+            'Modules\MyCustomizations\Http\ViewComposers\TransactionIndex'
+        );
     }
 
     /**
