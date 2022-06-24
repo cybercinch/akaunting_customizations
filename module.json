@@ -1,0 +1,17 @@
+{
+    "alias": "my-customizations",
+    "icon": "fa fa-cog",
+    "version": "1.0.0",
+    "active": 1,
+    "providers": [
+        "Modules\\MyCustomizations\\Providers\\Event",
+        "Modules\\MyCustomizations\\Providers\\Main"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "reports": [],
+    "widgets": [],
+    "settings": [],
+    "extra-modules": {}
+}
